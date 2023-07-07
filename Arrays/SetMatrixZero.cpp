@@ -11,13 +11,14 @@ int main() {
   cout << "Enter matrix\n";
 
   int arr[n][m];
-
+//input matrix
   for (int i = 0; i < n; i++) {
     for (int j = 0; j < m; j++) {
       cin >> arr[i][j];
     }
   }
 
+  //logic to replace 0 existing row and column with -1
   for (int i = 0; i < n; i++) {
     for (int j = 0; j < m; j++) {
 
@@ -35,7 +36,7 @@ int main() {
       }
     }
   }
-
+// replacing -1 with 0
   for (int i = 0; i < n; i++) {
     for (int j = 0; j < m; j++) {
       if (arr[i][j] == -1) {
@@ -44,6 +45,7 @@ int main() {
     }
   }
 
+  //print
   for (int i = 0; i < n; i++) {
     for (int j = 0; j < m; j++) {
       cout << arr[i][j];
