@@ -1,4 +1,4 @@
-//Find element at a particular position in pascals triangle
+//Find element at a particular position ie (for 3row and 4col pass n-1,c-1) in pascals triangle
 #include <iostream>
 using namespace std;
 
